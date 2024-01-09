@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@500&family=Rubik+Glitch&family=Rubik+Maps&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-weight: 100; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Caveat;
+}
+.logo {
+    display: flex;
+    font-family: 'Bungee Spice', sans-serif;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.logo:hover {
+    font-size: 35px;
+    transition: 1s;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+article:hover {
+    font-size: 30px;
+    color: orange;
+    transition: 1s;
+    
+}
+article img {
+    margin-right: 5px;
+}
+
+.Projects {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid white;
+}
+.Projects h1 {
+    color: red;
+    transition: 1s;
+}
+.Projects h1:hover {
+    color: orangered;
+    font-size: 35px;
+    transition: 1s;
+}
+.Projects p {
+    font-size: 25px;
+}
+.button {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-left: px;
+}
+.end {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.end b {
+    color: red;
+}
+a {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    article:hover {
+        font-size: 25px;
+    }
+    article img {
+        width: 25px;
+        height: 25px;
+    }
+    .Projects {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Projects h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .description {
+        font-size: 15px;
+    }
+    .end {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
