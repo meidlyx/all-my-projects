@@ -17,7 +17,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'SFProText-Light';
-    font-weight: 600;
+    
 }
 .logo {
     display: flex;
@@ -33,23 +33,13 @@ body {
     transition: 1s;
 }
 
-article {
+.head1 {
     display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    transition: 1s;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-article:hover {
-    font-size: 30px;
-    color: orange;
-    transition: 1s;
-    
-}
-article img {
-    margin-right: 5px;
-}
+
+
 
 .Projects {
     margin-top: 20px;
@@ -63,6 +53,8 @@ article img {
 .Projects h1 {
     color: red;
     transition: 1s;
+    justify-content: center;
+    display: flex;
 }
 .Projects h1:hover {
     color: orangered;
@@ -86,6 +78,53 @@ article img {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #000;
+    color: #fff; 
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+.popup img {
+    margin-right: 3px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-family: 'SFProText-Light';
+}
+button:hover {
+    background-color: #333;
+}
+.vvv {
+    display: flex;
+    justify-content: center;
+}
+
+
 .end b {
     color: red;
 }
@@ -94,18 +133,6 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-    article {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
-    }
-    article:hover {
-        font-size: 25px;
-    }
-    article img {
-        width: 25px;
-        height: 25px;
-    }
     .Projects {
         margin-left: 10px;
         margin-right: 10px;
