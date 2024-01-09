@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@500&family=Rubik+Glitch&family=Rubik+Maps&display=swap');
 
-
+@font-face {
+    font-family: 'SFProText-Light';
+    src: url('font-family/SFProText-Light.ttf');
+}
 
 * {
     margin: 0px;
@@ -13,7 +16,8 @@
 body {
     background-color: black;
     color: white;
-    font-family: Caveat;
+    font-family: 'SFProText-Light';
+    font-weight: 600;
 }
 .logo {
     display: flex;
