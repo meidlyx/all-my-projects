@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Все проекты Meidlyx</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <p>Meidlyx</p>
+        <div class="head1">
+            <div class="logo">
+                <p>Meidlyx</p>
+            </div>
         </div>
-        <hr>
     </header>
     <main>
-        <article>
-            <img src="png-files/flag-russia.png" width="35">Привет! Ты попал на сайт где находятся все мои проекты на данный момент (09.01.2024г)
-        </article>
-        <article>
-            <img src="png-files/flag-united-states.png" width="35">Hi! You got to the site where all my projects are at the moment (09.01.2024)
-        </article>
+        <div class="vvv"><button id="showPopupButton">О чем этот сайт? // What is this site about?</button></div>
+        
+        <div id="popup" class="popup">
+          <span class="close" id="closePopupButton" onclick="closePopup()">&times;</span>
+          <p><img src="png-files/flag-russia.png" width="20">Русский: Привет! Ты попал на сайт, где находятся все мои проекты на данный момент (09.01.2024г).</p>
+          <p><img src="png-files/flag-united-states.png" width="20">English: Hi! You got to the site where all my projects are at the moment (09.01.2024).</p>
+        </div>
         <hr>
         <div class="Projects">
             <h1>MeidlyxTube</h1>
@@ -44,8 +46,9 @@
                   that I made the previous site better than this one. I don't know.</p>
             <p class="button"><a href="https://meidlyx.github.io/MeidlyxFood/index.html">Перейти на сайт / Go to the website</a></p>
         </div>
-        <p class="end">1. НА ДАННЫЙ МОМЕНТ БОЛЬШЕ НИЧЕГО НЕТ. ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ САЙТА БЫЛО: 09.01.2024</p>
+        <p class="end">1. НА ДАННЫЙ МОМЕНТ БОЛЬШЕ НИЧЕГО НЕТ. ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ САЙТА БЫЛО: 09.01.2024.</p>
         <p class="end">2. У меня есть много проектов, но добавлять сюда буду только те которые до конца доделал.</p>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
