@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Все проекты Meidlyx 1.0</title>
+    <title>Meidlyx-Forum</title>
 </head>
 <body>
     <header>
@@ -14,39 +14,92 @@
             </div>
         </div>
     </header>
+    <hr>
     <main>
-        <div class="vvv"><button id="showPopupButton">О чем этот сайт? // What is this site about?</button></div>
+        <div class="vvv">
+            <button id="showPopupButton1">О чем этот сайт? // What is this site about?</button>
+            <button id="showPopupButton2">Обо мне // About me</button>
+            <button id="showPopupButton3">Связаться со мной // Contact me</button>
+        </div>
         
         <div id="popup" class="popup">
-          <span class="close" id="closePopupButton" onclick="closePopup()">&times;</span>
-          <p><img src="png-files/flag-russia.png" width="20">Русский: Привет! Ты попал на сайт, где находятся все мои проекты на данный момент (09.01.2024г).</p>
-          <p><img src="png-files/flag-united-states.png" width="20">English: Hi! You got to the site where all my projects are at the moment (09.01.2024).</p>
+            <span class="close" id="closePopupButton" onclick="closePopup()">&times;</span>
+            <div id="popupContent1">
+                <p><img src="png-files/flag-russia.png" width="20">Русский: Привет! Ты попал на сайт, где находятся все мои проекты на данный момент (10.01.2024г).</p>
+                <p><img src="png-files/flag-united-states.png" width="20">English: Hi! You got to the site where all my projects are at the moment (10.01.2024).</p>
+            </div>
+            <div id="popupContent2">
+                <p><img src="png-files/flag-russia.png" width="20">Русский: Скоро...</p>
+                <p><img src="png-files/flag-united-states.png" width="20">English: Soon...</p>
+            </div>
+            <div id="popupContent3">
+                <p>Email: meidlyx@gmail.com</p>
+            </div>
+            <div id="popupContent4">
+                <p><img src="png-files/flag-russia.png" width="20">Русский: Скоро... (вам будет проще перейти по ссылке, так как не факт, что я добавлю скриншоты, я сделал это чисто для красоты :))</p>
+                <p><img src="png-files/flag-united-states.png" width="20">English: Soon...(it's easier for you to follow the link, since it's not a fact that I'll add screenshots, I did it purely for beauty :))</p>
+            </div>
+            <div id="popupContent5">
+                <p><img src="png-files/flag-russia.png" width="20">Русский: Скоро... (вам будет проще перейти по ссылке, так как не факт, что я добавлю скриншоты, я сделал это чисто для красоты :))</p>
+                <p><img src="png-files/flag-united-states.png" width="20">English: Soon...(it's easier for you to follow the link, since it's not a fact that I'll add screenshots, I did it purely for beauty :))</p>
+            </div>
         </div>
+        
         <hr>
+
         <div class="Projects">
-            <h1>MeidlyxTube</h1>
-            <p class="Description">
-                Описание: Ru: Когда я делал этот сайт, я вдохновился Ютубом. Я не делал весь функицонал ютуба, я сделал лишь визуализацию. 
-                    Сделал темную и светлую тему, сделал маленькие анимации и т.д., так-же сделал мобильную версию сайта. Сделал я этот сайт когда начал 
-                     изучать html & css (Прошло 2-3 месяца после этого). En: When I was making this site, I was inspired by YouTube. I didn't do the whole
-                      YouTube functionality, I just did the visualization. I made a dark and light theme, made small animations, etc., and also made a 
-                       mobile version of the site. I made this site when I started learning html & css (It took 2-3 months after that)
-            </p>
-            <p class="button"><a href="https://meidlyx.github.io/MeidlyxTube/index.html">Перейти на сайт / Go to the website</a></p>
+            <p class="h1">MeidlyxTube</p>
+            <div class="Description">
+                <p class="Description2">Описание // Description:</p>
+                <div class="language">
+                    <img class="img" src="png-files/flag-russia.png" width="40" height="40">
+                    <p>Когда я делал этот сайт, я вдохновился Ютубом. Я не делал весь функицонал ютуба,
+                     я сделал лишь визуализацию. Сделал темную и светлую тему, сделал маленькие анимации и т.д., так-же сделал мобильную версию сайта.
+                      Сделал я этот сайт когда начал изучать html & css (Прошло 2-3 месяца после этого).</p>
+                </div>
+                <div class="language">
+                    <img class="img" src="png-files/flag-united-states.png" width="40" height="40">
+                    <p>When I was making this site, I was inspired by YouTube. I didn't do the whole
+                        YouTube functionality, I just did the visualization. I made a dark and light theme, made small animations, etc., and also made a 
+                         mobile version of the site. I made this site when I started learning html & css (It took 2-3 months after that).</p>
+                </div>
+            </div>
+            <div class="buttons1">
+                <div class="button1"><p class="button"><a href="https://meidlyx.github.io/MeidlyxTube/index.html">Перейти на сайт / Go to the website</a></p></div>
+                <div class="vvv">
+                    <button class="button3" id="showPopupButton4">Скриншоты // Screenshots</button>
+                </div>
+            </div>
         </div>
+
         <div class="Projects">
-            <h1>MeidlyxFood</h1>
-            <p class="Description">Описание: Ru: Этот сайт я сделал после предыдущего сайта. Не сразу, а с перерывом длинной 1 месяц. Это тоже визуал,
-                 но есть маленький процент Js. На тот момент я только начал изучать JavaScript. Этот сайт сделан для заказа доставки еды. Вдохновился
-                  я от Яндекс.Еда. На некоторых фотографиях можно увидеть мой фотошоп, который для меня вроде как не плох и не так сильно хорош. Но 
-                  все же по визуализации мне кажется я лучше сделал предыдущий сайт чем этот. Не знаю. En: I made this site after the previous site. 
-                  Not immediately, but with a break of 1 month long. This is also a visual, but there is a small percentage of Js. At that time, I 
-                  had just started learning JavaScript. This site is made for ordering food delivery. I was inspired by Yandex.Food. In some photos, 
-                  you can see my Photoshop, which for me is kind of not bad and not so good. But still, in terms of visualization, it seems to me 
-                  that I made the previous site better than this one. I don't know.</p>
-            <p class="button"><a href="https://meidlyx.github.io/MeidlyxFood/index.html">Перейти на сайт / Go to the website</a></p>
+            <p class="h1">MeidlyxFood</p>
+            <div class="Description">
+                <p class="Description2">Описание // Description:</p>
+                <div class="language">
+                    <img class="img" src="png-files/flag-russia.png" width="40" height="40">
+                    <p>Этот сайт я сделал после предыдущего сайта. Не сразу, а с перерывом длинной 1 месяц. Это тоже визуал,
+                        но есть маленький процент Js. На тот момент я только начал изучать JavaScript. Этот сайт сделан для заказа доставки еды. Вдохновился
+                         я от Яндекс.Еда. На некоторых фотографиях можно увидеть мой фотошоп, который для меня вроде как не плох и не так сильно хорош. Но 
+                         все же по визуализации мне кажется я лучше сделал предыдущий сайт чем этот. Не знаю.</p>
+                </div>
+                <div class="language">
+                    <img class="img" src="png-files/flag-united-states.png" width="40" height="40">
+                    <p>I made this site after the previous site. 
+                        Not immediately, but with a break of 1 month long. This is also a visual, but there is a small percentage of Js. At that time, I 
+                        had just started learning JavaScript. This site is made for ordering food delivery. I was inspired by Yandex.Food. In some photos, 
+                        you can see my Photoshop, which for me is kind of not bad and not so good. But still, in terms of visualization, it seems to me 
+                        that I made the previous site better than this one. I don't know.</p>
+                </div>
+            </div>
+            <div class="buttons1">
+                <div class="button1"><p class="button"><a href="https://meidlyx.github.io/MeidlyxFood/index.html">Перейти на сайт // Go to the website</a></p></div>
+                <div class="vvv">
+                    <button class="button3" id="showPopupButton5">Скриншоты // Screenshots</button>
+                </div>
+            </div>
         </div>
-        <p class="end">1. НА ДАННЫЙ МОМЕНТ БОЛЬШЕ НИЧЕГО НЕТ. ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ САЙТА БЫЛО: 09.01.2024.</p>
+        <p class="end">1. НА ДАННЫЙ МОМЕНТ БОЛЬШЕ НИЧЕГО НЕТ. ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ САЙТА БЫЛО: 10.01.2024.</p>
         <p class="end">2. У меня есть много проектов, но добавлять сюда буду только те которые до конца доделал.</p>
     </main>
     <script src="index.js"></script>
