@@ -9,23 +9,27 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none; 
-    font-weight: 100;
+    text-decoration: none;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background: rgb(93,70,64);
+    background: linear-gradient(236deg, rgba(93,70,64,1) 0%, rgba(58,58,80,1) 54%, rgba(96,58,63,1) 90%);
+    color: rgb(169, 169, 169);
     font-family: 'SFProText-Light';
-    
+}
+header {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border: 1px solid gray;
 }
 .logo {
-    display: flex;
-    font-family: 'Bungee Spice', sans-serif;
-    justify-content: center;
+    font-family: 'Bungee Spice';
     font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
     transition: 1s;
 }
 .logo:hover {
@@ -33,16 +37,15 @@ body {
     transition: 1s;
 }
 
-.head1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.glavnoe {
+    padding-top: 10px;
+    color: rgb(169, 169, 169);
 }
 
-
+/* Настройка проектов */
 
 .Projects {
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -50,79 +53,47 @@ body {
     margin-right: 100px;
     border: 1px solid white;
 }
-.h1 {
-    font-family: 'Bungee Spice', sans-serif;
-    color: red;
-    transition: 1s;
-    justify-content: center;
-    display: flex;
+
+.name-projects {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.desc{
+    text-align: center;
     font-size: 30px;
-    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
-.h1:hover {
-    font-size: 35px;
-    color: orangered;
-    transition: 1s;
-}
-.Description2 {
-    display: flex;
-    justify-content: center;
-    color: orangered;
-    font-size: 25px;
-    padding: 5px;
-    transition: 1s;
-}
-.Description2:hover {
-    font-size: 30px;
-    color: red;
-    transition: 1s;
-}
+
 .language {
-    display: flex;
-    flex-direction: row;
     font-size: 20px;
-    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.button1 {
+
+.open-website {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-website {
+    padding: 10px;
+    border-radius: 15px;
     font-size: 20px;
-    padding: 5px;
+    background: rgb(93,70,64);
+    background: radial-gradient(circle, rgba(93,70,64,1) 0%, rgba(58,58,80,1) 54%, rgba(96,58,63,1) 88%);
 }
-.button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-family: 'SFProText-Light';
-    transition: 1s;
-    margin: 5px;
-}
-.button:hover {
-    background-color: #333;
-}
-.buttons1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.end {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.button3 {
-    padding-top: 15px;
-}
+
+/* Pop-up окна */
 
 .popup {
     position: fixed;
@@ -130,11 +101,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #000;
-    color: #fff;
+    background: rgb(93,70,64);
+    background: radial-gradient(circle, rgba(93,70,64,1) 0%, rgba(58,58,80,1) 54%, rgba(96,58,63,1) 88%);
+    color: rgb(169, 169, 169);
     border: 2px solid #000;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    z-index: 1000;
+    z-index: 999;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease-in-out;
@@ -156,56 +129,158 @@ body {
     color: #fff;
     cursor: pointer;
 }
-button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+
+/* Aside-меню */
+
+aside {
+    width: 100%;
+    padding-left: 0.5rem;
+    float: right;
+    color: #ffffff;
+}
+
+#myAside {
+    width: 500px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -495px;
+    transition: left 1s ease;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#closeAsideButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #ff0000;
     cursor: pointer;
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-family: 'SFProText-Light';
-    transition: 1s;
-    margin: 5px;
 }
-button:hover {
-    background-color: #333;
+
+.close {
+    display: none;
 }
-.vvv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.content {
+    padding: 20px;
+}
+
+.button-container {
+    position: fixed;
+    top: -1px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.nana {
+    color: wheat;
+    font-size: 25px;
+}
+
+.button-p {
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
 }
 
 
 
-.end b {
-    color: red;
-}
 a {
-    color: white;
+    color: rgb(169, 169, 169);
 }
+
+/* МОБ. ВЕРСИЯ */
 
 @media screen and (max-width: 900px) {
-    .Projects {
-        margin-left: 10px;
-        margin-right: 10px;
+    body {
+        font-size: 14px;
     }
-    .Projects h1 {
+
+    header {
+        height: 60px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
-    .description {
-        font-size: 15px;
-    }
-    .end {
+
+    .logo {
         font-size: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
+    }
+
+    .button-p {
+        font-size: 30px;
+    }
+
+    .button-container {
+        top: 0;
+        right: 20px;
+    }
+
+    #myAside {
+        width: 70%;
+        height: 100vh;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-top: 60px;
+        transition: left 0.5s ease;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .content {
+        padding: 20px;
+        color: #fff;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 30px;
+        color: #ff0000;
+        cursor: pointer;
+    }
+
+    .Projects {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 70px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .name-projects {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .open-website {
+        text-align: center;
+    }
+
+    .button-website {
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
     }
 }
