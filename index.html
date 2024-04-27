@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Meidlyx-Forum</title>
 </head>
 <body>
     <header>
-        <div class="head1">
-            <div class="logo">
-                <p>Meidlyx</p>
-            </div>
+        <div class="logo">
+            <p>Meidlyx</p>
+        </div>
+        <div class="button-container">
+            <p class="button-p" onclick="toggleAside()">&equiv;</p>
         </div>
     </header>
-    <hr>
-    <main>
-        <div class="vvv">
-            <button id="showPopupButton1">О чем этот сайт? // What is this site about?</button>
-            <button id="showPopupButton2">Обо мне // About me</button>
-            <button id="showPopupButton3">Связаться со мной // Contact me</button>
+    <aside id="myAside">
+        <div class="content">
+            <p class="nana">Главное</p>
+            <p class="glavnoe" id="showPopupButton1">О чем этот сайт? // What is this site about?</p>
+            <p class="glavnoe" id="showPopupButton2">Обо мне // About me</p>
+            <p class="glavnoe" id="showPopupButton3">Связаться со мной // Contact me</p>
+            <br>
+            <hr>
+            <br>
+            <p class="nana">Создатель и проекты</p>
+            <a href="https://meidlyx.github.io/MeidlyxTube/index.html"><p style="padding-top: 10px;">MeidlyxTube</p></a>
+            <a href="https://meidlyx.github.io/MeidlyxFood/index.html"><p style="padding-top: 10px;">MeidlyxFood</p></a>
+            <a href="https://meidlyx.github.io/devices/"><p style="padding-top: 10px;">Meidlyx-Gadjets</p></a>
+            <a href="https://meidlyx.github.io/color-combinations/"><p style="padding-top: 10px;">Colors</p></a>
+            <br>
+            <hr>
+            <br>
+            <span id="closeAsideButton" class="close" onclick="closeAside()">&#10006;</span>
         </div>
-        
+    </aside>
+    <main>
         <div id="popup" class="popup">
             <span class="close" id="closePopupButton" onclick="closePopup()">&times;</span>
             <div id="popupContent1">
@@ -35,97 +49,75 @@
             <div id="popupContent3">
                 <p>Email: meidlyx@gmail.com</p>
             </div>
-            <div id="popupContent4">
-                <p><img src="png-files/flag-russia.png" width="20">Русский: Скоро... (вам будет проще перейти по ссылке, так как не факт, что я добавлю скриншоты, я сделал это чисто для красоты :))</p>
-                <p><img src="png-files/flag-united-states.png" width="20">English: Soon...(it's easier for you to follow the link, since it's not a fact that I'll add screenshots, I did it purely for beauty :))</p>
-            </div>
-            <div id="popupContent5">
-                <p><img src="png-files/flag-russia.png" width="20">Русский: Скоро... (вам будет проще перейти по ссылке, так как не факт, что я добавлю скриншоты, я сделал это чисто для красоты :))</p>
-                <p><img src="png-files/flag-united-states.png" width="20">English: Soon...(it's easier for you to follow the link, since it's not a fact that I'll add screenshots, I did it purely for beauty :))</p>
-            </div>
         </div>
-        
         <hr>
 
+        <!-- 1 ПРОЕКТ -->
         <div class="Projects">
-            <p class="h1">MeidlyxTube</p>
-            <div class="Description">
-                <p class="Description2">Описание // Description:</p>
+            <p class="name-projects">MeidlyxTube</p>
+            <div class="description">
+                <p class="desc">Описание:</p>
                 <div class="language">
-                    <img class="img" src="png-files/flag-russia.png" width="40" height="40">
                     <p>Когда я делал этот сайт, я вдохновился Ютубом. Я не делал весь функицонал ютуба,
-                     я сделал лишь визуализацию. Сделал темную и светлую тему, сделал маленькие анимации и т.д., так-же сделал мобильную версию сайта.
-                      Сделал я этот сайт когда начал изучать html & css (Прошло 2-3 месяца после этого).</p>
-                </div>
-                <div class="language">
-                    <img class="img" src="png-files/flag-united-states.png" width="40" height="40">
-                    <p>When I was making this site, I was inspired by YouTube. I didn't do the whole
-                        YouTube functionality, I just did the visualization. I made a dark and light theme, made small animations, etc., and also made a 
-                         mobile version of the site. I made this site when I started learning html & css (It took 2-3 months after that).</p>
+                        я сделал лишь визуализацию. Сделал темную и светлую тему, сделал маленькие анимации и т.д., так-же сделал мобильную версию сайта.
+                         Сделал я этот сайт когда начал изучать html & css (Прошло 2-3 месяца после этого).</p>
                 </div>
             </div>
-            <div class="buttons1">
-                <div class="button1"><p class="button"><a href="https://meidlyx.github.io/MeidlyxTube/index.html">Перейти на сайт / Go to the website</a></p></div>
-                <div class="vvv">
-                    <button class="button3" id="showPopupButton4">Скриншоты // Screenshots</button>
-                </div>
+            <div class="open-website">
+                <button class="button-website"><a href="https://meidlyx.github.io/MeidlyxTube/index.html">Перейти на сайт</a></button>
             </div>
         </div>
 
+        <!-- 2 ПРОЕКТ -->
         <div class="Projects">
-            <p class="h1">MeidlyxFood</p>
-            <div class="Description">
-                <p class="Description2">Описание // Description:</p>
+            <p class="name-projects">MeidlyxFood</p>
+            <div class="description">
+                <p class="desc">Описание:</p>
                 <div class="language">
-                    <img class="img" src="png-files/flag-russia.png" width="40" height="40">
                     <p>Этот сайт я сделал после предыдущего сайта. Не сразу, а с перерывом длинной 1 месяц. Это тоже визуал,
                         но есть маленький процент Js. На тот момент я только начал изучать JavaScript. Этот сайт сделан для заказа доставки еды. Вдохновился
                          я от Яндекс.Еда. На некоторых фотографиях можно увидеть мой фотошоп, который для меня вроде как не плох и не так сильно хорош. Но 
                          все же по визуализации мне кажется я лучше сделал предыдущий сайт чем этот. Не знаю.</p>
                 </div>
-                <div class="language">
-                    <img class="img" src="png-files/flag-united-states.png" width="40" height="40">
-                    <p>I made this site after the previous site. 
-                        Not immediately, but with a break of 1 month long. This is also a visual, but there is a small percentage of Js. At that time, I 
-                        had just started learning JavaScript. This site is made for ordering food delivery. I was inspired by Yandex.Food. In some photos, 
-                        you can see my Photoshop, which for me is kind of not bad and not so good. But still, in terms of visualization, it seems to me 
-                        that I made the previous site better than this one. I don't know.</p>
-                </div>
             </div>
-            <div class="buttons1">
-                <div class="button1"><p class="button"><a href="https://meidlyx.github.io/MeidlyxFood/index.html">Перейти на сайт // Go to the website</a></p></div>
-                <div class="vvv">
-                    <button class="button3" id="showPopupButton5">Скриншоты // Screenshots</button>
-                </div>
+            <div class="open-website">
+                <button class="button-website"><a href="https://meidlyx.github.io/MeidlyxFood/index.html">Перейти на сайт</a></button>
             </div>
         </div>
 
+        <!-- 3 ПРОЕКТ -->
         <div class="Projects">
-            <p class="h1">Meidlyx-Gadjets v1</p>
-            <div class="Description">
-                <p class="Description2">Описание // Description:</p>
+            <p class="name-projects">Meidlyx-Gadjets v1 (Wylsa.com)</p>
+            <div class="description">
+                <p class="desc">Описание:</p>
                 <div class="language">
-                    <img class="img" src="png-files/flag-russia.png" width="40" height="40">
                     <p>Этот сайт я начал делать на занятии, и решил закончить его дома. Мне попалось тема новости про гаджеты и технологии и поэтому я сделал 
                         сайт по этой теме. Сайт похож на официальный сайт вилсакома</p>
                 </div>
-                <div class="language">
-                    <img class="img" src="png-files/flag-united-states.png" width="40" height="40">
-                    <p>I started making this website in class, and decided to finish it at home. I came across the topic of news about gadgets and technology and so I made
-                        a website on this topic. The site is similar to the official website of wylsacom</p>
-                </div>
             </div>
-            <div class="buttons1">
-                <div class="button1"><p class="button"><a href="https://meidlyx.github.io/devices/">Перейти на сайт / Go to the website</a></p></div>
-                <div class="vvv">
-                    <button class="button3" id="showPopupButton4">Скриншоты // Screenshots</button>
-                </div>
+            <div class="open-website">
+                <button class="button-website"><a href="https://meidlyx.github.io/devices/">Перейти на сайт</a></button>
             </div>
         </div>
-        
-        <p class="end">1. НА ДАННЫЙ МОМЕНТ БОЛЬШЕ НИЧЕГО НЕТ. ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ САЙТА БЫЛО: 30.03.2024.</p>
-        <p class="end">2. У меня есть много проектов, но добавлять сюда буду только те которые до конца доделал.</p>
+
+        <!-- 4 ПРОЕКТ -->
+        <div class="Projects">
+            <p class="name-projects">Colors</p>
+            <div class="description">
+                <p class="desc">Описание:</p>
+                <div class="language">
+                    <p>Этот сайт, я сделал как заметку для себя и выложил в открытый доступ. Там находятся приятные глазу цвета для проектов. 
+                        На этом проекте, я впервые сделал aside-меню блюрным.</p>
+                </div>
+            </div>
+            <div class="open-website">
+                <button class="button-website"><a href="https://meidlyx.github.io/color-combinations/">Перейти на сайт</a></button>
+            </div>
+        </div>
     </main>
-    <script src="index.js"></script>
+    <footer>
+        <p>Версия сайта: 3.0.0</p>
+    </footer>
 </body>
+<script src="index.js"></script>
 </html>
