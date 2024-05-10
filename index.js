@@ -110,11 +110,11 @@ window.addEventListener('DOMContentLoaded', function() {
     if(window.innerWidth > 900) {
         // Desktop
         avatar.src = avatarPath;
-        avatar.width = 250;
+        avatar.width = 350;
     } else {
         // Mobile
         avatar.src = avatarPath;
-        avatar.width = 200;
+        avatar.width = 300;
     }
     avatar.style.borderRadius = '200px';
 });
