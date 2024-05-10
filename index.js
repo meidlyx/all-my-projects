@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     var randomIndex = Math.floor(Math.random() * avatars.length);
     var avatar = document.getElementById('avatar');
-    var avatarPath = 'png-files/' + avatars[randomIndex]; // Путь к вашим фотографиям
+    var avatarPath = 'png-files/' + avatars[randomIndex];
 
     if(window.innerWidth > 900) {
         // Desktop
