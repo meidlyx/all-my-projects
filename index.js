@@ -3,26 +3,32 @@ function showPopup(contentId) {
     var popupContent1 = document.getElementById('popupContent1');
     var popupContent2 = document.getElementById('popupContent2');
     var popupContent3 = document.getElementById('popupContent3');
+    var popupContent4 = document.getElementById('popupContent4');
 
     if (contentId === 1) {
         popupContent1.style.display = 'block';
         popupContent2.style.display = 'none';
         popupContent3.style.display = 'none';
+        popupContent4.style.display = 'none';
     } else if (contentId === 2) {
         popupContent1.style.display = 'none';
         popupContent2.style.display = 'block';
         popupContent3.style.display = 'none';
+        popupContent4.style.display = 'none';
     } else if (contentId === 3) {
         popupContent1.style.display = 'none';
         popupContent2.style.display = 'none';
         popupContent3.style.display = 'block';
+        popupContent4.style.display = 'none';
     } else if (contentId === 4) {
         popupContent1.style.display = 'none';
         popupContent2.style.display = 'none';
         popupContent3.style.display = 'none';
+        popupContent4.style.display = 'block';
     }
 
     popup.classList.add('active');
+    closePopupButton.style.display = 'block'; 
 }
 
 function closePopup() {
@@ -30,10 +36,12 @@ function closePopup() {
     var popupContent1 = document.getElementById('popupContent1');
     var popupContent2 = document.getElementById('popupContent2');
     var popupContent3 = document.getElementById('popupContent3');
+    var popupContent4 = document.getElementById('popupContent4');
 
     popupContent1.style.display = 'none';
     popupContent2.style.display = 'none';
     popupContent3.style.display = 'none';
+    popupContent4.style.display = 'none';
 
     popup.classList.remove('active');
 }
@@ -48,6 +56,10 @@ document.getElementById('showPopupButton2').addEventListener('click', function()
 
 document.getElementById('showPopupButton3').addEventListener('click', function() {
     showPopup(3);
+});
+
+document.getElementById('showPopupButton4').addEventListener('click', function() {
+    showPopup(4);
 });
 
 document.getElementById('closePopupButton').addEventListener('click', closePopup);
@@ -80,3 +92,33 @@ function closeAside() {
 document.getElementById("showPopupButton1").addEventListener("click", toggleAside);
 document.getElementById("showPopupButton2").addEventListener("click", toggleAside);
 document.getElementById("showPopupButton3").addEventListener("click", toggleAside);
+
+window.addEventListener('DOMContentLoaded', function() {
+    var avatars = [
+        'ava-meidlyx1.png',
+        'ava-meidlyx2.png',
+        'ava-meidlyx3.png',
+        'ava-meidlyx4.png',
+        'ava-meidlyx5.png',
+        'ava-meidlyx6.png'
+    ];
+
+    var randomIndex = Math.floor(Math.random() * avatars.length);
+    var avatar = document.getElementById('avatar');
+    var avatarPath = 'png-files/' + avatars[randomIndex]; // Путь к вашим фотографиям
+
+    if(window.innerWidth > 900) {
+        // Desktop
+        avatar.src = avatarPath;
+        avatar.width = 250;
+    } else {
+        // Mobile
+        avatar.src = avatarPath;
+        avatar.width = 100;
+    }
+    avatar.style.borderRadius = '200px';
+});
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
