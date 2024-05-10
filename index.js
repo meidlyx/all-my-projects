@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', function() {
     } else {
         // Mobile
         avatar.src = avatarPath;
-        avatar.width = 100;
+        avatar.width = 200;
     }
     avatar.style.borderRadius = '200px';
 });
