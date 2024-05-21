@@ -95,12 +95,16 @@ document.getElementById("showPopupButton3").addEventListener("click", toggleAsid
 
 window.addEventListener('DOMContentLoaded', function() {
     var avatars = [
-        'ava-meidlyx1.png',
-        'ava-meidlyx2.png',
-        'ava-meidlyx3.png',
-        'ava-meidlyx4.png',
-        'ava-meidlyx5.png',
-        'ava-meidlyx6.png'
+        'ava-meidlyx1.png', 'ava-meidlyx2.png', 'ava-meidlyx3.png', 'ava-meidlyx4.png', 'ava-meidlyx5.png',
+        'ava-meidlyx6.png', 'ava-meidlyx7.png', 'ava-meidlyx8.png', 'ava-meidlyx9.png', 'ava-meidlyx10.png',
+        'ava-meidlyx11.png', 'ava-meidlyx12.png', 'ava-meidlyx13.png', 'ava-meidlyx14.png', 'ava-meidlyx15.png',
+        'ava-meidlyx16.png', 'ava-meidlyx17.png', 'ava-meidlyx18.png', 'ava-meidlyx19.png', 'ava-meidlyx20.png',
+        'ava-meidlyx21.png', 'ava-meidlyx22.png', 'ava-meidlyx23.png', 'ava-meidlyx24.png', 'ava-meidlyx25.png',
+        'ava-meidlyx26.png', 'ava-meidlyx27.png', 'ava-meidlyx28.png', 'ava-meidlyx29.png', 'ava-meidlyx30.png',
+        'ava-meidlyx31.png', 'ava-meidlyx32.png', 'ava-meidlyx33.png', 'ava-meidlyx34.png', 'ava-meidlyx35.png',
+        'ava-meidlyx36.png', 'ava-meidlyx37.png', 'ava-meidlyx38.png', 'ava-meidlyx39.png', 'ava-meidlyx40.png',
+        'ava-meidlyx41.png', 'ava-meidlyx42.png', 'ava-meidlyx43.png', 'ava-meidlyx44.png', 'ava-meidlyx45.png',
+        'ava-meidlyx46.png'
     ];
 
     var randomIndex = Math.floor(Math.random() * avatars.length);
