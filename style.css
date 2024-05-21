@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@500&family=Rubik+Glitch&family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@500&family=Rubik+Glitch&family=Rubik+Maps&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
     font-family: 'SFProText-Light';
@@ -13,19 +13,20 @@
 }
 
 body {
-    background: rgb(93,70,64);
-    background: linear-gradient(236deg, rgba(93,70,64,1) 0%, rgba(58,58,80,1) 54%, rgba(96,58,63,1) 90%);
     color: rgb(169, 169, 169);
     font-family: 'SFProText-Light';
+    background: linear-gradient(270deg, rgb(107, 6, 129), rgb(104, 183, 5)); --darkreader-inline-bgimage: linear-gradient(270deg, #560567, #539204); --darkreader-inline-bgcolor: initial;
 }
+
 header {
     position: fixed;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(86, 0, 0, 0.205);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.205);
     width: 100%;
     height: 7%;
     z-index: 1000;
+    top: 0;
 }
 .logo {
     font-family: 'Bungee Spice';
@@ -58,9 +59,9 @@ header {
     font-size: 30px;
 }
 .button-text-about-me {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    background-color: rgba(81, 0, 0, 0.205);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.205);
     padding: 10px;
     border-radius: 200px;
     font-size: 15px;
@@ -76,8 +77,8 @@ header {
     margin-left: 100px;
     margin-right: 100px;
     border: 1px solid white;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
     background-color: rgba(39, 1, 1, 0.205);
 }
 
@@ -128,9 +129,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(86, 0, 0, 0.205);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.205);
     color: rgb(169, 169, 169);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -174,8 +175,8 @@ aside {
     left: -495px;
     transition: left 1s ease;
     z-index: 1000;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -219,6 +220,21 @@ footer {
     padding: 10px;
 }
 
+.telegram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-links {
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 25px;
+    margin-top: 10px;
+    background-color: #27a7e7;
+    color: white;
+}
+
 a {
     color: rgb(169, 169, 169);
 }
@@ -228,6 +244,7 @@ a {
 @media screen and (max-width: 900px) {
     body {
         font-size: 14px;
+        background: linear-gradient(315deg, rgb(47, 28, 21), rgb(45, 1, 101)); --darkreader-inline-bgimage: linear-gradient(315deg, #261611, #240151); --darkreader-inline-bgcolor: initial;
     }
 
     header {
@@ -236,8 +253,8 @@ a {
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
     }
 
     .logo {
@@ -245,7 +262,8 @@ a {
     }
 
     .button-p {
-        font-size: 30px;
+        margin-top: 5px;
+        font-size: 40px;
     }
 
     .button-container {
@@ -262,8 +280,8 @@ a {
         transition: left 0.5s ease;
         position: fixed;
         z-index: 1000;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
     }
 
     .content {
@@ -312,5 +330,12 @@ a {
         color: #fff;
         border: none;
         cursor: pointer;
+    }
+
+    .button-links {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 5px;
+        font-size: 15px;
     }
 }
