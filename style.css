@@ -15,7 +15,7 @@
 body {
     color: rgb(169, 169, 169);
     font-family: 'SFProText-Light';
-    background: linear-gradient(270deg, rgb(107, 6, 129), rgb(104, 183, 5)); --darkreader-inline-bgimage: linear-gradient(270deg, #560567, #539204); --darkreader-inline-bgcolor: initial;
+    background: linear-gradient(315deg, rgb(47, 28, 21), rgb(45, 1, 101)); --darkreader-inline-bgimage: linear-gradient(315deg, #261611, #240151); --darkreader-inline-bgcolor: initial;
 }
 
 header {
