@@ -143,3 +143,50 @@ window.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
+
+
+
+
+// THEMES
+
+
+// BLACK    
+const BlackTheme = document.getElementById("btn-theme-black")
+
+const black = localStorage.getItem("black")
+if (black) {
+    document.body.classList.add(black)
+}
+
+BlackTheme.addEventListener("click", function() {
+    document.body.classList.toggle("theme-black")
+
+    const black = localStorage.getItem("black")
+
+    if (black === "theme-black") {
+        localStorage.setItem("black", "")
+    } else {
+        localStorage.setItem("black", "theme-black")
+    }
+})
+
+// WHITE
+
+const WhiteTheme = document.getElementById("btn-theme-white")
+
+const white = localStorage.getItem("white")
+if (white) {
+    document.body.classList.add(white)
+}
+
+WhiteTheme.addEventListener("click", function() {
+    document.body.classList.toggle("theme-white")
+
+    const white = localStorage.getItem("white")
+
+    if (white === "theme-white") {
+        localStorage.setItem("white", "")
+    } else {
+        localStorage.setItem("white", "theme-white")
+    }
+})
