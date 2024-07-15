@@ -1,0 +1,12 @@
+.btn-theme-white {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+body.theme-white {
+    background: white;
+    color: black;
+}
